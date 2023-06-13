@@ -16,7 +16,6 @@ function LimpiarCache(cacheName, items) {
 self.addEventListener("install", (event) => {
 	const cacheStatic = caches.open(CacheStatic).then((cache) => {
 		cache.addAll([
-			"/",
 			"/index.html",
 			"/js/app.js",
 			"/js/base.js",
